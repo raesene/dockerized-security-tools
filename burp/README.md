@@ -10,7 +10,7 @@ If you want to be able to get data in/out of the container easily, add another v
 Command to run is
 
 ```
-docker run -v /tmp/.X11-unix/:/tmp/.X11-unix -e DISPLAY=$DISPLAY -p 8080:8080 -it raesene/burp-free
+docker run -v /tmp/.X11-unix/:/tmp/.X11-unix -e DISPLAY=$DISPLAY -p 8080:8080 -it raesene/burp
 ```
 
 
