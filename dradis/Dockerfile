@@ -4,6 +4,9 @@ LABEL maintainer="Rory McCune <rorym@mccune.org.uk>"
 
 COPY localtime /etc/localtime
 
+#Avoid getting prompted during builds
+ENV DEBIAN_FRONTEND=noninteractive
+
 #Pre-requisites
 RUN apt update -qq && \
     apt install -y ruby nodejs git gcc ruby-dev make libmysqlclient-dev libsqlite3-dev g++ tzdata && \
