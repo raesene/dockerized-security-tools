@@ -20,7 +20,6 @@ WORKDIR /dradis-ce
 #Complains without the rake gem setup
 RUN gem install rake
 
-#Need to run setup twice, which needs doing for reasons unexplainable
 RUN ruby bin/setup
 
 #Bind to all interfaces explicitly as the default is localhost only
