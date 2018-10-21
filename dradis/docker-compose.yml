@@ -1,4 +1,7 @@
+version: '3'
+
 services:
+
   dradis:
     image: raesene/dradis
     ports:

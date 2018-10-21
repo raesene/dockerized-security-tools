@@ -7,3 +7,9 @@ Using a common base image will help reduce disk space needed, Ubuntu:18.04 is us
 The Dockerfiles are then made available on [Docker Hub](https://hub.docker.com/r/raesene/) under my account.  
 
 Periodic rebuilds are triggered for each build using [Microsoft Flow](https://flow.microsoft.com/en-us/) so that the images stay fresh.
+
+## Play with Docker
+
+For some of the images you can try things out in Play with Docker using the buttons below (you'll need a docker hub account to make this work)
+
+ - Dradis - [![Try in PWD](https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/raesene/dockerized-security-tools/master/dradis/docker-compose.yml)
