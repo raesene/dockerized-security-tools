@@ -1,0 +1,5 @@
+services:
+  dradis:
+    image: raesene/dradis
+    ports:
+      - "3000:3000"
