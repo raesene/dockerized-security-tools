@@ -10,6 +10,6 @@ Periodic rebuilds are triggered for each build using [Microsoft Flow](https://fl
 
 ## Play with Docker
 
-For some of the images you can try things out in Play with Docker using the buttons below (you'll need a docker hub account to make this work)
+For some of the images you can try things out in Play with Docker using the buttons below (you'll need a docker hub account to make this work).  Once you click the button and the stack has launched on Play with Docker just look for the link with the port number in it (e.g. 3000) on the page and click that for access.
 
  - Dradis - [![Try in PWD](https://raw.githubusercontent.com/play-with-docker/stacks/master/assets/images/button.png)](https://labs.play-with-docker.com/?stack=https://raw.githubusercontent.com/raesene/dockerized-security-tools/master/dradis/docker-compose.yml)
