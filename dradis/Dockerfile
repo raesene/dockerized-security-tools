@@ -17,7 +17,8 @@ RUN git clone --depth=1 https://github.com/dradis/dradis-ce.git
 
 WORKDIR /dradis-ce
 
-ENV RAILS_ENV=production
+#Can't set production without SSL
+#ENV RAILS_ENV=production
 
 #Complains without the rake gem setup
 RUN gem install rake

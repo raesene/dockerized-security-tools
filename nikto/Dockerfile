@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="rorym@mccune.org.uk"
+LABEL maintainer "Rory Mccune <rorym@mccune.org.uk>"
 
 RUN apt update && apt install -y git && rm -rf /var/lib/apt/lists/*
 
