@@ -13,7 +13,7 @@ RUN apt update -qq && \
     rm -rf /var/lib/apt/lists/* && rm -rf /var/cache/apt/* 
 
 #Clone the repo
-RUN git clone --depth=1 https://github.com/dradis/dradis-ce.git && rm -rf /dradis-ce/.git/*
+RUN git clone --depth=1 https://github.com/dradis/dradis-ce.git
 
 WORKDIR /dradis-ce
 
