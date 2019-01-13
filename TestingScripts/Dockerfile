@@ -16,7 +16,7 @@ WORKDIR /TestingScripts
 
 COPY --from=0 /TestingScripts /TestingScripts
 
-RUN gem install bundler && bundle install
+RUN gem install bundler -v '1.17.3' && bundle install
 
 ENTRYPOINT ["/bin/bash"]
 
