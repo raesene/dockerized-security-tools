@@ -16,7 +16,7 @@ jobs:
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      run: docker login docker.pkg.github.com -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
     - name: push to gh docker repo
       run: docker push docker.pkg.github.com/raesene/dockerized-security-tools/testingscripts
 
