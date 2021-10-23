@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 
+FROM ruby:2.7.2 
 
 LABEL maintainer="Rory McCune <rorym@mccune.org.uk>"
 
@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 #Pre-requisites
 RUN apt update -qq && \
-    apt install -y ruby nodejs git gcc ruby-dev make libmysqlclient-dev libsqlite3-dev g++ tzdata && \
+    apt install -y nodejs git gcc make libmariadb-dev libsqlite3-dev g++ tzdata && \
     rm -rf /var/lib/apt/lists/* && rm -rf /var/cache/apt/* 
 
 #Clone the repo
