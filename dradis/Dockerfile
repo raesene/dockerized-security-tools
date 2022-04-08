@@ -22,7 +22,7 @@ WORKDIR /dradis-ce
 
 #Complains without the rake gem setup
 RUN gem install rake
-RUN gem install bundler -v '2.2.8'
+RUN gem install bundler
 
 RUN ruby bin/setup
 
