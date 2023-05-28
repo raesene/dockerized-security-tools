@@ -1,4 +1,4 @@
-FROM openjdk:14
+FROM eclipse-temurin:17 
 
 LABEL maintainer="rorym@mccune.org.uk"
 
@@ -7,9 +7,6 @@ RUN mkdir burp
 WORKDIR /burp
 RUN curl -o burpsuite.jar https://portswigger.net/burp/releases/download
 
-RUN mkdir -p /root/.java/.userPrefs/burp/
-
-COPY prefs.xml /root/.java/.userPrefs/burp/
-
+RUN apt update && apt install -y libxtst6 libxrender-dev libxi6 
 
 ENTRYPOINT ["java", "-jar", "/burp/burpsuite.jar"]
