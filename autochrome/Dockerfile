@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 LABEL maintainer "Rory Mccune <rorym@mccune.org.uk>"
 

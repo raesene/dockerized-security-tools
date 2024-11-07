@@ -1,9 +1,9 @@
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 LABEL maintainer="Rory McCune <rorym@mccune.org.uk>"
 
 #Localtime hack
-COPY localtime /etc/
+#COPY localtime /etc/
 
 #Avoid getting prompted during builds
 ENV DEBIAN_FRONTEND=noninteractive
@@ -44,7 +44,7 @@ RUN apt-get update && apt-get install -y \
   ruby-dev && \
   rm -rf /var/lib/apt/lists/* && rm -rf /var/cache/apt/*
 
-RUN gem install bundler -v '2.1.4'
+RUN gem install bundler
 
 #Install Metasploit
 RUN git clone --depth=1 https://github.com/rapid7/metasploit-framework.git && \

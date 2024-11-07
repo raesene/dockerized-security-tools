@@ -1,16 +1,16 @@
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 LABEL maintainer="rorym@mccune.org.uk"
 
 RUN apt update && apt install -y build-essential libssh-dev openssl wget
 
-RUN wget https://nmap.org/dist/nmap-7.70.tar.bz2 && tar -xjvf nmap-7.70.tar.bz2
+RUN wget https://nmap.org/dist/nmap-7.95.tar.bz2 && tar -xjvf nmap-7.95.tar.bz2
 
-WORKDIR /nmap-7.70
+WORKDIR /nmap-7.95
 
 RUN ./configure && make && make install
 
-FROM ubuntu:18.04
+FROM ubuntu:24.04
 
 RUN apt update && apt install -y libssh-dev openssl && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/*
 
