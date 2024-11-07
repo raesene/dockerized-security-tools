@@ -17,18 +17,15 @@ RUN apt-get update && apt-get install -y \
   wget \
   smbclient \
   nfs-common \
-  rsh-client \
   whois \
   snmp \
   libreadline-dev \
   libpq5 \
   libpq-dev \
-  libreadline5 \
   libsqlite3-dev \
   libpcap-dev \
   autoconf \
   postgresql \
-  pgadmin3 \
   curl \
   zlib1g-dev \
   libxml2-dev \
