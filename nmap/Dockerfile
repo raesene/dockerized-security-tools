@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 LABEL maintainer="rorym@mccune.org.uk"
 
-RUN apt update && apt install -y build-essential libssh-dev openssl wget
+RUN apt update && apt install -y build-essential libssh-dev openssl wget automake
 
 RUN wget https://nmap.org/dist/nmap-7.95.tar.bz2 && tar -xjvf nmap-7.95.tar.bz2
 

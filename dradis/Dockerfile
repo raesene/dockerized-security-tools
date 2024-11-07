@@ -1,4 +1,4 @@
-FROM ruby:2.7.2 
+FROM ruby:3.1.2 
 
 LABEL maintainer="Rory McCune <rorym@mccune.org.uk>"
 
@@ -22,7 +22,7 @@ WORKDIR /dradis-ce
 
 #Complains without the rake gem setup
 RUN gem install rake
-RUN gem install bundler
+RUN gem install bundler -v=2.3.16
 
 RUN ruby bin/setup
 
